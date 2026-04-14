@@ -1,0 +1,49 @@
+attack: render
+batch_size: 4
+batch_size_test: 16
+brightness:
+- -0.1
+- 0.1
+ckpt_interval: 20
+clamp_shift: 0.01
+color_transform: false
+conf_thresh: 0.01
+contrast:
+- 0.9
+- 1.1
+crop: TCA
+patch_size: 100
+data_dir: data/hu_camou_data
+defense: none
+epochs: 100
+img_size: 416
+iou_thresh: 0.01
+iou_thresh_test: 0.5
+log:
+- tensorboard
+- file
+lr: 0.01
+model: FasterRCNN_torch
+nms_thresh: 0.4
+noise: 0.02
+nps_loss: 0
+obj_cls_loss: obj
+patch_init: 0.5
+pooling: gauss
+ratio: 0.7  # Seed ratio
+scale_range:
+- 0.75
+- 1.6
+seed: 3407
+tensorboard_interval: 10
+test_repeats: 12
+texture: simple
+tps: true
+tps3d: true
+transform_fixed: false
+translation:
+- 0.8
+- 1.0
+tv_loss: 0.1
+workers: 2
+output_dir: ./output

@@ -1,0 +1,10 @@
+defense: DWT
+dwt_max_level: 3
+dwt_extra_levels:
+- 2
+- 1
+- 0
+dwt_thresh: 0.17
+dwt_thresh_multiplier: 2
+dwt_process: blur
+dwt_kern_size: 33

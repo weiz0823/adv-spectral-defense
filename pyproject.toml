@@ -1,0 +1,56 @@
+[project]
+name = "adv-spectral-defense"
+version = "0.1.0"
+description = "Adversarial Spectral Defense"
+author = "Wei Zhang"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pycocotools>=2.0.0",
+    "scipy>=1.16.0",
+    "seaborn>=0.13.0",
+    "tensorboardx>=2.0.0",
+    "torch>=2.0.0",
+    "torchmetrics>=1.7.0",
+    "torchvision>=0.15.0",
+    "tqdm>=4.50.0",
+]
+
+[dependency-groups]
+dev = [
+    "notebook>=7.5.0",
+    "pre-commit>=4.5.1",
+]
+dwt = [
+    "pywavelets>=1.7.0",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true
+
+[tool.pytest]
+minversion = "9.0"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+    # omit pytorch-generated files in /tmp
+    "/tmp/*",
+    "/private/*",
+]
+
+[tool.ruff]
+# Assume Python 3.12
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = [
+    "E741",
+    "F401",
+    "F403",
+    "F405",
+]

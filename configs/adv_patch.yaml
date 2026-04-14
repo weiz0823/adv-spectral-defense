@@ -1,0 +1,45 @@
+angle:
+- -10.0
+- 10.0
+attack: patch
+batch_size: 8
+batch_size_test: 16
+brightness:
+- -0.1
+- 0.1
+ckpt_interval: 100
+conf_thresh: 0.01
+contrast:
+- 0.9
+- 1.1
+crop: none
+defense: none
+epochs: 800
+img_size: 416
+iou_thresh: 0.5
+iou_thresh_test: 0.5
+data_dir: data/INRIAPerson
+label_dir: data/INRIAPerson/custom_ann_frcnn
+lc_scale: 0.1
+log:
+- tensorboard
+- file
+lr: 0.03
+model: FasterRCNN_torch
+nms_thresh: 0.4
+noise: 0.02
+nps_loss: 0.01
+obj_cls_loss: obj
+old_fashion: true
+patch_init: 0.5
+patch_size: 300
+ratio: 1.0
+scale: 0.2
+seed: 3407
+tensorboard_interval: 10
+texture: simple
+tps: false
+tv_loss: 2.5
+output_dir: ./output
+weight: data/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth
+workers: 2

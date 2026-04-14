@@ -1,0 +1,3 @@
+model: YOLOv3
+weight: data/yolov3_d53_mstrain-416_273e_coco-2b60fcd9.pth
+label_dir: data/INRIAPerson/custom_ann_yolov3

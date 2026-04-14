@@ -1,0 +1,2 @@
+model: YOLOv9
+weight: data/yolov9-s-converted.pt

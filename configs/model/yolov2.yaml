@@ -1,0 +1,3 @@
+model: YOLOv2
+weight: data/yolov2.weights
+label_dir: data/INRIAPerson/custom_ann_yolov2

@@ -1,0 +1,3 @@
+model: FasterRCNN
+weight: data/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth
+label_dir: data/INRIAPerson/custom_ann_frcnn

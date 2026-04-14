@@ -1,0 +1,3 @@
+model: DeformableDETR
+weight: data/deformable_detr_at.pth
+img_size: 640

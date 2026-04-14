@@ -1,0 +1,3 @@
+model: DeformableDETR
+weight: data
+label_dir: data/INRIAPerson/custom_ann_deformable_detr
